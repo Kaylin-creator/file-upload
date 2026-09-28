@@ -77,6 +77,14 @@ web_modules/
 # Next.js build output
 .next
 out
+next-env.d.ts
+
+# Vercel
+.vercel
+
+# misc
+.DS_Store
+*.pem
 
 # Nuxt.js build / generate output
 .nuxt
