@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 
+import { FileManager } from "@/components/file-manager";
 import { SignOutButton } from "@/components/sign-out-button";
 import { createClient } from "@/lib/supabase/server";
 
@@ -23,6 +24,10 @@ export default async function DashboardPage() {
           <SignOutButton />
         </div>
       </header>
+
+      <div className="mt-8">
+        <FileManager />
+      </div>
     </main>
   );
 }
